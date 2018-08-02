@@ -4,17 +4,21 @@
  * and open the template in the editor.
  */
 package js08;
+import java.util.Scanner;
 public class cth2 {
     public static void main(String[] args){
-        int v;
-        for(v = 1;v <= 10;v++)
+        Scanner b = new Scanner(System.in);
+        int v, c;
+        System.out.print("Pilih Nomer yang akan di gandakan: ");
+        c = b.nextInt();
+        for(v = 1;v <= c;v++)
         {
             System.out.print(" _ ");    
         }
         
         v = 1;
         
-        while(v <= 10)
+        while(v <= c)
         {
             System.out.print(" - ");
             v++;
@@ -27,7 +31,7 @@ public class cth2 {
             System.out.print(" ~ ");
             v++;
         }
-        while(v <= 10);
+        while(v <= c);
 
     }
     
